@@ -2,7 +2,7 @@
 // README at: https://github.com/devcontainers/templates/tree/main/src/javascript-node
 {
   "name": "Next Dev Container",
-  "dockerComposeFile": "docker-compose.yml",
+  "dockerComposeFile": "docker-compose.yaml",
   "service": "devcontainer",
   "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
 
@@ -14,7 +14,7 @@
   // "features": {},
 
   // Use 'forwardPorts' to make a list of ports inside the container available locally.
-  // "forwardPorts": [],
+  "forwardPorts": [3000],
 
   // Use 'postCreateCommand' to run commands after the container is created.
   "postCreateCommand": "yarn install"
